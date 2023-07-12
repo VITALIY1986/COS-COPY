@@ -1,35 +1,31 @@
 import Link from 'next/link';
 import Image from "../../../image";
 import {DEFAULT_CATEGORY_IMG_URL} from "../../../constants/urls";
-import { isEmpty } from 'lodash';
 
 const ParentCategoryBlock = ( props ) => {
 
 	const { category } = props;
-	if (category?.image ===  null) {
-        return (<div className='hidden'></div>)
-    }
-	else {
- return (
-		<div className="product mb-5">
+
+	return (
+		<div className="product w-1/2  md:w-1/3  my-3 flex justify-center text-center ">
 			<Link href={`/categorie/${category?.slug}`}>
 				<a>
-					<Image
-						className="object-cover "
+				<Image
+						className=" mx-3 "
 						layout="fill"
-						containerClassNames="h-80 md:h-96 "
+						containerClassNames="h-28 w-28"
 						sourceUrl={ category?.image?.sourceUrl ?? '' }
 						defaultImgUrl={DEFAULT_CATEGORY_IMG_URL}
-						altText={category?.image?.altText ?? category.slug}
+						altText={category?.image?.altText }
 					/>
-					<div className="product-title-container p-3">
-						<h3 className="product-title text-lg font-medium text-white bg-gradient-to-r from-blue ... p-3">{category?.name}</h3>
+					<div className=" pt-3">
+						<h3 className=" text-lg  font-medium  break-all ... ">{category?.name}</h3>
 					
 					</div>
 				</a>
 			</Link>
 		</div>
-	);}
+	);
 }
 
 export default ParentCategoryBlock;

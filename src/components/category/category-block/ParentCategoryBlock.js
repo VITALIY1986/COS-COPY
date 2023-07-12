@@ -12,7 +12,7 @@ const ParentCategoryBlock = ( props ) => {
 	else {
  return (
 		<div className="product mb-5">
-			<Link href={`/category/${category?.slug}`}>
+			<Link href={`/categorie/${category?.slug}`}>
 				<a>
 					<Image
 						className="object-cover "

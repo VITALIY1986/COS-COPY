@@ -22,7 +22,7 @@ const Product = ( props ) => {
 
 { product.featured  ? <div className="bg-blue rounded absolute right-2 top-2 z-10 text-white p-2">NEW</div>: ''}
 {/* product?.salePrice  ? <div className={`${ isLoggedIn ? 'block bg-red-200 rounded absolute left-2 top-2 z-10 text-white p-2' : 'block bg-red-200 rounded absolute left-2 top-2 z-10 text-white p-2' }`}>{ result.toFixed(0)}%OFF</div> : ''*/}
-				<Link href={ `/product/${ product?.slug }`} >
+				<Link href={ `/produs/${ product?.slug }`} >
 					<a>
 						<Image
 							className="object-cover bg-gray-100"

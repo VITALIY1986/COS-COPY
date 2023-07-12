@@ -2,27 +2,16 @@
 
 
 
-.slider-button {
-  height: 100%;
-    justify-content: space-between;
-    position: relative;
-    display: flex;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* right: 0; */
-    /* background: #efefef; */
-    padding: 0px 20px;
-    font-size: 24px
-}
-.inset-shadow{
-  box-shadow: inset -2px -2px 1px #c7a36e, inset 2px 2px 1px #f9eede;
-    background: linear-gradient(326deg,#fff,#dbc09b);
-    color: #373229;
- }
 
-.wt-braun{
-  height: 50px;
-  background-color: #373229;
+
+
+.slider-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #efefef;
+  padding: 10px 20px;
+  font-size: 24px;
 }
 
 
@@ -350,7 +339,7 @@ button:focus-visible {
 
   .component {
     max-width: 327px;
-   
+    background-image: url(./bg-pattern-mobile.svg);
     background-position: top;
     flex-direction: column;
   }
@@ -383,7 +372,7 @@ button:focus-visible {
   max-width: 920px;
   width: 100%;
   background-color: #ffffff;
- 
+  background-image: url(./bg-pattern-desktop.svg);
   background-position: -565px -295px;
   background-repeat: no-repeat;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
@@ -442,7 +431,7 @@ button:focus-visible {
     padding-bottom: 18px;
 
     &::after {
-      
+      content: url(./icon-arrow-down.svg);
       margin-right: 17px;
       transform: rotate(90deg);
     }

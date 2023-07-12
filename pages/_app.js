@@ -14,7 +14,12 @@ Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
   
-  return <AuthContextProvider><AppProvider><SearchProvider2 client={client}><SearchProvider client={client}><ApolloProvider client={client}><Component {...pageProps}  /></ApolloProvider></SearchProvider></SearchProvider2></AppProvider></AuthContextProvider>
+  return <AuthContextProvider><AppProvider><SearchProvider2 client={client}><SearchProvider client={client}><ApolloProvider client={client}><Component {...pageProps}  />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+  
+  
+  </ApolloProvider></SearchProvider></SearchProvider2></AppProvider></AuthContextProvider>
 
 
 

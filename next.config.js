@@ -5,7 +5,14 @@ const path = require("path");
 const allowedImageWordPressDomain = new URL(process.env.NEXT_PUBLIC_WORDPRESS_URL).hostname
 
 module.exports =   {
-    
+    async rewrites() {
+        return [
+            {
+                source: '/sitemap.xml',
+                destination: '/api/sitemap',
+            },
+        ]
+    }, 
    
     webpackDevMiddleware: (config) => {
         config.watchOptions = {

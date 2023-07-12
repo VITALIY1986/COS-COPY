@@ -30,7 +30,7 @@ const result = amount/interest;
 			<div className="product mb-5   relative">
 
 
-{ product?.salePrice  ? <div className=" bg-red-400 rounded-full absolute left-2 top-2 z-10 text-white p-6 w-20 h-20 flex justify-center items-center">-{ procent.toFixed(0)}%</div> : ''}
+
 				<Link href={ `/produs/${ product?.slug }`} >
 					<a>
 						<Image
@@ -49,7 +49,7 @@ const result = amount/interest;
 				<div className="product-info text-center pl-2 md:pl-3">
 					
 				
-				 {product?.salePrice   ?  <div className='block mt-4'>  <strike className=" text-red-200 text-2xl ">{product?.regularPrice}<span ></span></strike><span className='ml-3 text-2xl bg-white rounded-full px-6 py-1 text-gray-500'>{product?.price}  lei</span></div> :   <div className=" text-2xl">{product?.price }<span className='ml-2'>lei</span></div>}
+				 {product?.salePrice   ?  <div className='block mt-4'>  <strike className=" text-red-200 text-2xl ">{product?.regularPrice}<span ></span></strike><span className='ml-3 text-2xl bg-white rounded-full px-6 py-1 text-gray-500'>{product?.price}  </span></div> :   <div className=" text-2xl">{product?.price }<span className='ml-2'></span></div>}
 				
 					<AddToCartButton product={ product } />
 				</div>

@@ -12,8 +12,8 @@ const YourOrder = ( { cart } ) => {
 						<thead>
 						<tr className="woo-next-cart-head-container text-left">
 							<th className="woo-next-cart-heading-el" scope="col"/>
-							<th className="woo-next-cart-heading-el" scope="col">Продукти</th>
-							<th className="woo-next-cart-heading-el" scope="col">Всього</th>
+							<th className="woo-next-cart-heading-el" scope="col">PRODUSE</th>
+							<th className="woo-next-cart-heading-el" scope="col">TOTAL</th>
 						</tr>
 						</thead>
 						<tbody>
@@ -23,10 +23,10 @@ const YourOrder = ( { cart } ) => {
 							) )
 						) }
 						{/*Total*/}
-						<tr className="bg-gray-200">
+						<tr className="bg-green_cos text-white">
 							<td className=""/>
-							<td className="woo-next-checkout-total font-normal text-xl">Проміжний підсумок</td>
-							<td className="woo-next-checkout-total font-bold text-xl">{ cart.totalProductsPrice }</td>
+							<td className="woo-next-checkout-total font-normal text-xl py-10 px-3">CANTITATE FINALA</td>
+							<td className="woo-next-checkout-total font-bold text-xl px-3">{ cart.totalProductsPrice }</td>
 						</tr>
 						{/* <tr className="">
 							<td className=""/>

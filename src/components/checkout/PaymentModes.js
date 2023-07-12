@@ -11,7 +11,7 @@ const PaymentModes = ( { input, handleOnChange } ) => {
 			<div className="form-check woo-next-payment-input-container mt-2">
 				<label className="form-check-label">
 					<input onChange={ handleOnChange } value="bacs" className="form-check-input mr-3" name="paymentMethod" type="radio" checked={'bacs' === paymentMethod}/>
-					<span className="woo-next-payment-content">Прямий банківський переказ</span>
+					<span className="woo-next-payment-content">TRANSFER BANCAR DIRECT</span>
 				</label>
 			</div>
 			{/*Pay with Paypal
@@ -32,7 +32,7 @@ const PaymentModes = ( { input, handleOnChange } ) => {
 			<div className="form-check woo-next-payment-input-container mt-2">
 				<label className="form-check-label">
 					<input onChange={ handleOnChange } value="cod" className="form-check-input mr-3" name="paymentMethod" type="radio" checked={'cod' === paymentMethod}/>
-					<span className="woo-next-payment-content">Оплата при доставці</span>
+					<span className="woo-next-payment-content">PLATA LA LIVRARE</span>
 				</label>
 			</div>
 		{/*	<div className="form-check woo-next-payment-input-container mt-2">

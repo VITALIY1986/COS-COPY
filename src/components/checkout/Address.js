@@ -11,14 +11,14 @@ const Address = ({input,  states, handleOnChange, isFetchingStates, isShipping})
     const {address2, errors} = input || {};
 console.log(address2)
     const inputId = `address2-${isShipping ? 'shipping' : 'billing'}`;
-    let countrieses = [{countryCode:"Кур'єрська доставка",countryName:"Кур'єрська доставка"},
-    {countryCode:"Вітділення Нової Пошти",countryName:"Вітділення Нової Пошти"},
+    let countrieses = [{countryCode:"LIVRARE CURIERAT",countryName:"LIVRARE CURIERAT"},
+    {countryCode:"COD POȘTAL",countryName:"COD POȘTAL"},
     
 ]; 
 
 
-const deliveriAdres = address2 === "Кур'єрська доставка" ? "Адреса вулиці" : "Номер вітділення";
-const deliveriplesholder = address2 === "Кур'єрська доставка" ? "Номер будинку та назва вулиці" : "Номер вітділення Нової пошти в Вашому місті";
+const deliveriAdres = address2 === "LIVRARE CURIERAT" ? "STRADA ȘI NR" : "NUMĂRUL DEPARTAMENTULUI";
+const deliveriplesholder = address2 === "LIVRARE CURIERAT" ? "STRADA ȘI NR" : "NUMĂRUL DEPARTAMENTULUI";
     return (
         <>
             <div className="flex flex-wrap overflow-hidden sm:-mx-3">
@@ -27,7 +27,7 @@ const deliveriplesholder = address2 === "Кур'єрська доставка" ?
                     inputValue={input?.firstName}
                     required
                     handleOnChange={handleOnChange}
-                    label="Ім'я"
+                    label="PRENUME"
                     errors={errors}
                     isShipping={isShipping}
                     containerClassNames="w-full overflow-hidden sm:my-2 sm:px-2 md:w-1/2"
@@ -37,7 +37,7 @@ const deliveriplesholder = address2 === "Кур'єрська доставка" ?
                     inputValue={input?.lastName}
                     required
                     handleOnChange={handleOnChange}
-                    label="Прізвище"
+                    label="NUME"
                     errors={errors}
                     isShipping={isShipping}
                     containerClassNames="w-full overflow-hidden sm:my-2 sm:px-2 md:w-1/2"
@@ -58,7 +58,7 @@ const deliveriplesholder = address2 === "Кур'єрська доставка" ?
                 required
                 inputValue={input?.city}
                 handleOnChange={handleOnChange}
-                label="Місто"
+                label="ORAȘ"
                 errors={errors}
                 isShipping={isShipping}
                 containerClassNames="mb-4"
@@ -78,7 +78,7 @@ const deliveriplesholder = address2 === "Кур'єрська доставка" ?
            
              <div className="mb-3">
             <label className="leading-7 text-sm text-gray-700" htmlFor={inputId}>
-                Спосіб доставки
+            METODA DE LIVRARE
                 <Abbr required/>
             </label>
             <div className="relative w-full border-none">
@@ -86,10 +86,10 @@ const deliveriplesholder = address2 === "Кур'єрська доставка" ?
                     onChange={handleOnChange}
                     value={address2}
                     name="address2"
-                    className="bg-gray-100 bg-opacity-50 border border-gray-500 text-gray-500 appearance-none inline-block py-3 pl-3 pr-8 rounded leading-tight w-full"
+                    className="bg-white bg-opacity-50 border border-gray-500 text-gray-500 appearance-none inline-block py-3 pl-3 pr-8 rounded leading-tight w-full"
                     id={inputId}
                 >
-                    <option value="">Вибрати спосіб...</option>
+                    <option value="">ALEGEȚI O METODĂ...</option>
                     {!isEmpty(countrieses) &&
                     map(countrieses, (address2) => (
                         <option key={address2?.countryCode} data-countrycode={address2?.countryCode}
@@ -140,7 +140,7 @@ const deliveriplesholder = address2 === "Кур'єрська доставка" ?
                     inputValue={input?.phone}
                     required
                     handleOnChange={handleOnChange}
-                    label="Телефон"
+                    label="TELEFON"
                     errors={errors}
                     isShipping={isShipping}
                     containerClassNames="mb-4"

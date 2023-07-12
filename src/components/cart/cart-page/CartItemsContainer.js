@@ -111,15 +111,15 @@ const CartItemsContainer = () => {
 
 	return (
 		<>
-		<div className="hidden    mx-4 md:h-screen md:flex md: justify-center md:items-center ">
+		<div className="hidden  px-4 md:h-screen md:flex md:justify-center md:items-center bg-grey_cos">
 			{ cart ? (
-				<div className="woo-next-cart-wrapper container">
+				<div className="woo-next-cart-wrapper container bg-grey_cos">
 					<div className="cart-header grid grid-cols-2 gap-4">
-						<h1 className="text-2xl mb-5 uppercase">Корзина</h1>
+						<h1 className="text-2xl mb-5 uppercase font-semibold">COŞ</h1>
 						{/*Clear entire cart*/}
 						<div className="clear-cart text-right">
-							<button className="px-4 py-1 bg-gray-500 text-white rounded-sm w-auto" onClick={ ( event ) => handleClearCart( event ) } disabled={ clearCartProcessing }>
-								<span className="woo-next-cart">Очистити корзину</span>
+							<button className="px-4 py-1 bg-red-400 text-white rounded-sm w-auto" onClick={ ( event ) => handleClearCart( event ) } disabled={ clearCartProcessing }>
+								<span className="woo-next-cart">COȘ TRANSPARENT</span>
 								<i className="fa fa-arrow-alt-right"/>
 							</button>
 							{ clearCartProcessing ? <p>Clearing...</p> : '' }
@@ -132,11 +132,11 @@ const CartItemsContainer = () => {
 								<tr className="woo-next-cart-head-container">
 									<th className="woo-next-cart-heading-el" scope="col"/>
 									<th className="woo-next-cart-heading-el" scope="col"/>
-									<th className="woo-next-cart-heading-el" scope="col">Продукт</th>
-									<th className="woo-next-cart-heading-el" scope="col">Кількість</th>
+									<th className="woo-next-cart-heading-el" scope="col">PRODUS</th>
+									<th className="woo-next-cart-heading-el" scope="col">CANTITATE</th>
 									{/*<th className="woo-next-cart-heading-el" scope="col">Ціна</th>*/}
 									
-									<th className="woo-next-cart-heading-el" scope="col">Всього</th>
+									<th className="woo-next-cart-heading-el" scope="col">TOTAL</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -156,13 +156,13 @@ const CartItemsContainer = () => {
 							</table>
 
 						{/*Cart Total*/ }
-						<div className=" border p-5 bg-gray-200">
+						<div className=" border p-5 bg-green_cos text-white">
 							<div className="w-full">
 								{/* <h2 className="text-2xl">Cart Total</h2> */}
 								<table className="table table-hover mb-5">
 									<tbody>
 									<tr className="table-light flex flex-col">
-										<td className="woo-next-cart-element-total text-2xl font-normal">Проміжний підсумок</td>
+										<td className="woo-next-cart-element-total text-2xl font-normal">CANTITATE FINALA</td>
 										<td className="woo-next-cart-element-amt text-2xl font-bold">{ ( 'string' !== typeof cart.totalProductsPrice ) ? cart.totalProductsPrice.toFixed(2) : cart.totalProductsPrice }</td>
 									</tr>
 									{/* <tr className="table-light">
@@ -172,8 +172,8 @@ const CartItemsContainer = () => {
 									</tbody>
 								</table>
 								<Link href="/checkout">
-									<button className="bg-blue text-white w-full py-2 ">
-										<span className="woo-next-cart-checkout-txt">Перейти до оформлення замовлення</span>
+									<button className="bg-red-400 text-white w-full py-2 ">
+										<span className="woo-next-cart-checkout-txt">PROCEED TO CHECKOUT</span>
 										<i className="fas fa-long-arrow-alt-right"/>
 									</button>
 								</Link>
@@ -186,10 +186,10 @@ const CartItemsContainer = () => {
 				</div>
 			) : (
 				<div className="container mx-auto my-32 px-4 xl:px-0">
-					<h2 className="text-2xl mb-5">У кошику немає товарів</h2>
+					<h2 className="text-2xl mb-5">NU EXISTĂ PRODUSE ÎN COȘ</h2>
 					<Link href="/">
-						<button className="bg-purple-600 text-white px-5 py-3 rounded-sm">
-							<span className="woo-next-cart-checkout-txt">Додати нові продукти</span>
+						<button className=" bg-red-400 text-white px-5 py-3 rounded-sm">
+							<span className="woo-next-cart-checkout-txt">ADAUGĂ PRODUSE NOI</span>
 							<i className="fas fa-long-arrow-alt-right"/>
 						</button>
 					</Link>
@@ -200,15 +200,15 @@ const CartItemsContainer = () => {
 
 
 
-<div className="block md:hidden  my-32 mx-4 ">
+<div className="block md:hidden    ">
 			{ cart ? (
-				<div className="woo-next-cart-wrapper container">
+				<div className="woo-next-cart-wrapper  bg-grey_cos py-32 px-4">
 					<div className="cart-header grid grid-cols-2 gap-4">
-						<h1 className="text-2xl mb-5 uppercase">Корзина</h1>
+						<h1 className="text-2xl mb-5 uppercase font-semibold">COŞ</h1>
 						{/*Clear entire cart*/}
 						<div className="clear-cart text-right">
-							<button className="px-4 py-1 bg-gray-500 text-white rounded-sm w-auto" onClick={ ( event ) => handleClearCart( event ) } disabled={ clearCartProcessing }>
-								<span className="woo-next-cart">Очистити корзину</span>
+							<button className="px-4 py-2 bg-red-400 text-white rounded-sm w-auto" onClick={ ( event ) => handleClearCart( event ) } disabled={ clearCartProcessing }>
+								<span className="woo-next-cart">COȘ TRANSPARENT</span>
 								<i className="fa fa-arrow-alt-right"/>
 							</button>
 							{ clearCartProcessing ? <p>Clearing...</p> : '' }
@@ -235,13 +235,13 @@ const CartItemsContainer = () => {
 							
 
 						{/*Cart Total*/ }
-						<div className="mt-8 border p-5 bg-gray-200">
+						<div className="mt-8 border p-5 bg-green_cos text-white">
 							<div className="w-full">
 								{/* <h2 className="text-2xl">Cart Total</h2> */}
 								<table className="table table-hover mb-5">
 									<tbody>
 									<tr className="table-light flex flex-col">
-										<td className="woo-next-cart-element-total text-2xl font-normal">Проміжний підсумок</td>
+										<td className="woo-next-cart-element-total text-2xl font-normal">CANTITATE FINALA</td>
 										<td className="woo-next-cart-element-amt text-2xl font-bold">{ ( 'string' !== typeof cart.totalProductsPrice ) ? cart.totalProductsPrice.toFixed(2) : cart.totalProductsPrice }</td>
 									</tr>
 									{/* <tr className="table-light">
@@ -251,8 +251,8 @@ const CartItemsContainer = () => {
 									</tbody>
 								</table>
 								<Link href="/checkout">
-									<button className="bg-blue text-white w-full py-2 ">
-										<span className="woo-next-cart-checkout-txt">Перейти до оформлення замовлення</span>
+									<button className="bg-red-400 text-white w-full py-5 ">
+										<span className="woo-next-cart-checkout-txt">PROCEED TO CHECKOUT</span>
 										<i className="fas fa-long-arrow-alt-right"/>
 									</button>
 								</Link>
@@ -265,10 +265,10 @@ const CartItemsContainer = () => {
 				</div>
 			) : (
 				<div className="container mx-auto my-32 px-4 xl:px-0">
-					<h2 className="text-2xl mb-5">No items in the cart</h2>
+					<h2 className="text-2xl mb-5">NU EXISTĂ PRODUSE ÎN COȘ</h2>
 					<Link href="/">
-						<button className="bg-purple-600 text-white px-5 py-3 rounded-sm">
-							<span className="woo-next-cart-checkout-txt">Add New Products</span>
+						<button className="bg-red-400 text-white px-5 py-3 rounded-sm">
+							<span className="woo-next-cart-checkout-txt">ADAUGĂ PRODUSE NOI</span>
 							<i className="fas fa-long-arrow-alt-right"/>
 						</button>
 					</Link>

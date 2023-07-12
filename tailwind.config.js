@@ -1,3 +1,4 @@
+
 module.exports = {
   // @see   https://tailwindcss.com/docs/upcoming-changes
     future: {
@@ -12,9 +13,10 @@ module.exports = {
         height: {
           'almost-screen': 'calc(-16rem + 100vh)',
           '308px': '19.25rem',
-          'sliderlg': '70vh',
-          'slidersm': '30vh',
-          'cart': '60vh'
+          'sliderlg': '100vh',
+          'slidersm': '100vh',
+          'gallerysm': '47rem',
+          'galleryxsm': '37rem',
         },
         purplebt:{
           DEFAULT: '#783ea8',
@@ -24,34 +26,22 @@ module.exports = {
           current: 'currentColor',
           blue: {
            
-            DEFAULT: '#7372aa',
+            DEFAULT: '#e44244',
             
           },
           purple: {
-            DEFAULT: '#2b2b3e'
+            DEFAULT: '#e44244'
           },
           very_peri: {
-            DEFAULT: '#debc90'
-          },
-          futer: {
-            DEFAULT: '#39333c'
-          },
-          cart: {
-            DEFAULT: '#f0f0f0'
-          },
-          green_cos: {
-            DEFAULT: '#747c65'
-          },
-          grey_cos: {
-            DEFAULT: '#efefef'
+            DEFAULT: '#ffffff'
           },
           very_peri_dark: {
             DEFAULT: '#413f5d'
           },
           pink: {
-            light: '#ff7ce5',
-            DEFAULT: '#ff49db',
-            dark: '#ff16d1',
+            light: '#e44244',
+            DEFAULT: '#e44244',
+            dark: '#e44244',
           },
           gray: {
             darkest: '#1f2d3d',

@@ -1,20 +1,27 @@
 
 
 .slider-button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #efefef;
-  padding: 10px 20px;
-  font-size: 24px;
+  height: 100%;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* background: #efefef; */
+    padding: 0px 20px;
+    font-size: 24px
 }
+.inset-shadow{
+  box-shadow: inset -2px -2px 1px #c7a36e, inset 2px 2px 1px #f9eede;
+    background: linear-gradient(326deg,#fff,#dbc09b);
+    color: #373229;
+ }
 
-
-
-
-
-
-
+.wt-braun{
+  height: 50px;
+  background-color: #373229;
+}
 
 .main-title-inner {
   background: #fff;

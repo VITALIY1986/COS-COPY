@@ -1,6 +1,6 @@
 import Layout from "../src/components/Layout";
 import client from '../src/components/ApolloClient';
-import ParentCategoriesBlock from "../src/components/category/category-block/ParentCategoriesBlock";
+import ParentCategoryBlock from "../src/components/category/category-block/ParentCategoryBlock";
 import GET_CATEGORIES_QUERY from "../src/queries/get-categories";
 
 export default function Categories ( props ) {
@@ -11,9 +11,20 @@ export default function Categories ( props ) {
 		<Layout>
 			
 			{/*Categories*/}
-			<div className="categories product-categories-container container mx-auto my-32  xl:px-0">
-				<h2 className="text-2xl mb-5 uppercase">Categories</h2>
-				<ParentCategoriesBlock productCategories={ productCategories }/>
+			
+				<h2 className="text-2xl ml-3 uppercase mt-20 text-center">Categories</h2>
+				<div className=" flex flex-wrap  justify-around my-10">
+				{ productCategories.length ? (
+							productCategories
+							.filter(category => category.slug !== "par-landing")
+							.filter(category => category.slug !== "uncategorized")
+							.filter(category => category.slug !== "vitamine-minerale")
+							.filter(category => category.slug !== "advertising-package")
+							.filter(category => category.slug !== "offers")
+							.filter(category => category.slug !== "aloe-vera-pacheta-3-1")
+							.filter(category => category.slug !== "pachete-promotionale")
+							.map( category => <ParentCategoryBlock category={ category }/> )
+						) : '' }
 			</div>
 		</Layout>
 	)

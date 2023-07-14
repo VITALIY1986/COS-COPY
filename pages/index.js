@@ -44,8 +44,8 @@ export default function Home (props) {
 			<Layout>
 				<Head>
       
-	  <title>Vitamine și minerale naturale direct de la producător. C.O.S. Laboratories</title>
-	  <meta name="description" content="Vitamine și minerale de la producător. Deoarece suntem producători, oferim preț favorabil și calitate înaltă."/>
+	  <title>Lenjerie de pat de calitate, Premium și de lux - Descoperă cea mai bună lenjerie de pat</title>
+	  <meta name="description" content="Lenjerie de pat de calitate, Premium și de lux - descoperă confortul suprem și luxul absolut în fiecare noapte. Materiale premium și designuri elegante pentru un dormitor de excepție. Alege rafinamentul și calitatea pentru o experiență de dormit fără egal."/>
 	  <meta name="google-site-verification" content="5sT3_P7tKTbA9RuTPkiQlpDpXBK84GG89RcmtVHR-Dw" />
 	  <meta name="robots" content="index,follow" />
 	</Head>

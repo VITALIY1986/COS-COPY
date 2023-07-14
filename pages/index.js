@@ -60,7 +60,7 @@ export default function Home (props) {
 				{/*Hero 1*/}
 	<div  className="main  ">
 	<HeroCarousel heroCarousel={heroCarousel}/>
-	<div className="wt-braun"></div>
+	
 			
 	
 

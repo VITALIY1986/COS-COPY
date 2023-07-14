@@ -79,7 +79,7 @@ const HeroCarousel = ({heroCarousel}) => {
                 }
           
           
-            <div className="banner-content pb-10  px-2 w-full absolute z-10 bottom-0   whitespace-normal overflow-ellipsis text-center">
+            <div className="banner-content pb-20  px-2 w-full absolute z-10 bottom-0   whitespace-normal overflow-ellipsis text-center">
                 <h2 className="overflow-ellipsis banner-content__title text-3xl md:text-5xl  text-white font-playfair font-bold mb-3">{heroCarousel[activeIndex]?.name}</h2>
                 <p className="overflow-ellipsis banner-content__description text-2xl md:text-5xl text-white bg-yellov  inline-block">{heroCarousel[activeIndex]?.description}</p>
  <Link href={`/produs/${heroCarousel[activeIndex]?.slug}/`}>

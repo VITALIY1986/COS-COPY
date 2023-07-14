@@ -80,7 +80,7 @@ export default function Home (props) {
 
 
 	
-			{/*Categories*/}
+			{/*Categories
 			<h2 className="text-2xl ml-3 uppercase mt-20 text-center font-semibold">CATALOGE</h2>
 			<div className=" flex flex-wrap  justify-around my-10">
 				
@@ -101,7 +101,7 @@ export default function Home (props) {
 
 
 	
-
+*/}
 
 
 

@@ -8,7 +8,7 @@ const Footer = () => (
 		
 			<div className="w-24">
 	
-						<Image  src={profilePic} alt="C.O.S. Laboratories " />
+						<Image  src={profilePic} alt="Luxtex.ro - Lenjerie de pat de calitate, Premium și de lux în Iași " />
 						</div>
 		
 			
@@ -16,7 +16,7 @@ const Footer = () => (
 			<div className="bg-grey_cos  p-3 rounded-full mx-1 shadow-xl"><a href="https://www.facebook.com/COS.Laboratories/"><Facebook/></a></div><div className="bg-grey_cos  p-3 rounded-full mx-1 shadow-xl"><a href="https://www.instagram.com/cos_laboratories/"><Instagram/></a></div>
 			</div>
 			</div>
-			<div className=" mt-6 text-center"><p>© 2019-2023 C.O.S. Laboratories / Toate drepturile rezervate. </p></div>
+			<div className=" mt-6 text-center"><p>© 2019-2023 LUXTEX / Toate drepturile rezervate. </p></div>
 		</div>
 
 );

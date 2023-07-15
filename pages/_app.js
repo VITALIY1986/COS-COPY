@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   return <AuthContextProvider><AppProvider><SearchProvider2 client={client}><SearchProvider client={client}><ApolloProvider client={client}><Component {...pageProps}  />
   
   
-  
+  <Head><meta name="google-site-verification" content="_Q2yFnMZMZo-tyBmMLL5R8yAxnnt1_ow1MLHyJTORz8" /></Head>
   </ApolloProvider></SearchProvider></SearchProvider2></AppProvider></AuthContextProvider>
 
 

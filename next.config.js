@@ -25,6 +25,6 @@ module.exports =   {
      * @see https://nextjs.org/docs/basic-features/image-optimization#domains
      */
     images: {
-        domains: [ allowedImageWordPressDomain, 'https://lux-tex.com.ro' ],
+        domains: [ allowedImageWordPressDomain, 'www.lux-tex.com.ro' ],
     },
 };

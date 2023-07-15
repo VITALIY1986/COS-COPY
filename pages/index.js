@@ -46,8 +46,8 @@ export default function Home (props) {
       
 	  <title>Lenjerie de pat de calitate, Premium și de lux în Iași - Descoperă cea mai bună lenjerie de pat pentru confortul suprem și luxul absolut.</title>
 	  <meta name="description" content="Lenjerie de pat de calitate, Premium și de lux în Iași - Descoperă confortul suprem și luxul absolut în fiecare noapte. Materiale premium și designuri elegante pentru un dormitor de excepție. Alege rafinamentul și calitatea pentru o experiență de dormit fără egal. Explorează gama noastră de lenjerii de pat în Iași pentru a adăuga un plus de eleganță și rafinament în dormitorul tău."/>
-	  <meta name="google-site-verification" content="5sT3_P7tKTbA9RuTPkiQlpDpXBK84GG89RcmtVHR-Dw" />
-	  <meta name="robots" content="index,follow" />
+      <meta name="robots" content="index,follow" />
+	  <meta name="google-site-verification" content="_Q2yFnMZMZo-tyBmMLL5R8yAxnnt1_ow1MLHyJTORz8" />
 	</Head>
 				<Script strategy="lazyOnload">
         {`

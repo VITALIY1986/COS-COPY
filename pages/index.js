@@ -139,9 +139,9 @@ export default function Home (props) {
 				</div>
 			
 			</div>
-		
-				<div class="mb-10"><h1 class="text-5xl  lg:text-6xl font-bold mb-10">Lenjerie de pat de calitate, Premium și de lux în Iași - Descoperă cea mai bună lenjerie de pat la Luxtex</h1>
-				<p>destinația ta de încredere pentru confortul suprem și luxul absolut. Suntem mândri să îți oferim o gamă largă de lenjerii de pat, create cu atenție și atenție la detalii, pentru a-ți oferi cea mai bună experiență de odihnă și confort în inima orașului Iași.</p>
+			<h1 class="px-3 text-4xl  lg:text-6xl font-bold mb-10">Lenjerie de pat de calitate, Premium și de lux în Iași </h1>
+				<div class="mb-10 px-3  text-justify">
+				<p> Descoperă cea mai bună lenjerie de pat la Luxtex.destinația ta de încredere pentru confortul suprem și luxul absolut. Suntem mândri să îți oferim o gamă largă de lenjerii de pat, create cu atenție și atenție la detalii, pentru a-ți oferi cea mai bună experiență de odihnă și confort în inima orașului Iași.</p>
 				<p>Indiferent dacă cauți o lenjerie de pat de calitate superioară, un design exclusiv sau materiale luxuriante, Luxtex te întâmpină cu o selecție impresionantă. De la seturi de lenjerii de pat din bumbac moale și respirabil, până la lenjerii de pat din mătase fină sau satin delicat, vei găsi opțiuni care se potrivesc stilului și preferințelor tale.</p>
 				<p>Calitatea și durabilitatea sunt principii de bază pentru Luxtex. Utilizăm materiale premium și tehnici de fabricație de înaltă calitate pentru a-ți oferi lenjerii de pat care rezistă în timp și oferă o senzație plăcută la atingere. Fiecare detaliu este atent studiat, de la cusături precise până la finisaje impecabile, pentru a te asigura că ai parte de produse de cea mai înaltă calitate.</p>
 				<p>Experimentează confortul și rafinamentul pe care îl oferă lenjeriile de pat de lux de la Luxtex în orașul Iași. Fie că vrei să transformi dormitorul într-un sanctuar de relaxare sau cauți o notă elegantă și sofisticată, gama noastră variată de modele și culori îți permite să alegi ceea ce se potrivește cel mai bine stilului tău.</p>

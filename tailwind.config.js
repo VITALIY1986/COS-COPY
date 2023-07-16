@@ -43,6 +43,15 @@ module.exports = {
             DEFAULT: '#e44244',
             dark: '#e44244',
           },
+          text_title:{
+            DEFAULT: '#333333',
+          },
+          bottons:{
+            DEFAULT: '#800000',
+          },
+          bottons_hover:{
+            DEFAULT: '#ae4e4e',
+          },
           gray: {
             darkest: '#1f2d3d',
             dark: '#3c4858',

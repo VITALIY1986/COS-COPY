@@ -27,7 +27,7 @@ const result = amount/interest;
 	return (
 		// @TODO Need to hndle Group products differently.
 		undefined !== product && 'GroupProduct' !== product.__typename ? (
-			<div className="product mb-5   relative">
+			<div className="product mb-5   relative bg-white p-2 rounded-sm">
 
 
 
@@ -45,11 +45,11 @@ const result = amount/interest;
 					</a>
 					
 				</Link>
-				<div className="text-center pl-2 md:pl-3">{product.name}</div>
+				<div className="text-center pl-2 md:pl-3 font-bold text-text_title">{product.name}</div>
 				<div className="product-info text-center pl-2 md:pl-3">
 					
 				
-				 {product?.salePrice   ?  <div className='mt-4 flex flex-col'>  <strike className=" text-red-200 text-xl ">{product?.regularPrice}<span ></span></strike><span className=' text-2xl bg-white rounded-full  py-1 text-gray-500'>{product?.price}  </span></div> :   <div className=" text-2xl">{product?.price }<span className='ml-2'></span></div>}
+				 {product?.salePrice   ?  <div className='mt-3 flex flex-col'>  <strike className=" text-red-200 text-xl ">{product?.regularPrice}<span ></span></strike><span className=' text-2xl bg-white rounded-full   text-text_title'>{product?.price}  </span></div> :   <div className=" text-2xl text-text_title">{product?.price }<span className='ml-2'></span></div>}
 				
 					<AddToCartButton product={ product } />
 				</div>

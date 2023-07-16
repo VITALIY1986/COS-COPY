@@ -139,7 +139,7 @@ export default function Home (props) {
 				</div>
 			
 			</div>
-			<h1 class="px-3 text-4xl  lg:text-6xl font-bold mb-10">Lenjerie de pat de calitate, Premium și de lux în Iași </h1>
+			<h1 class="px-3 text-4xl  lg:text-6xl font-bold mb-10 text-text_title">Lenjerie de pat de calitate, Premium și de lux în Iași </h1>
 				<div class="mb-10 px-3  text-justify">
 				<p> Descoperă cea mai bună lenjerie de pat la Luxtex.destinația ta de încredere pentru confortul suprem și luxul absolut. Suntem mândri să îți oferim o gamă largă de lenjerii de pat, create cu atenție și atenție la detalii, pentru a-ți oferi cea mai bună experiență de odihnă și confort în inima orașului Iași.</p>
 				<p>Indiferent dacă cauți o lenjerie de pat de calitate superioară, un design exclusiv sau materiale luxuriante, Luxtex te întâmpină cu o selecție impresionantă. De la seturi de lenjerii de pat din bumbac moale și respirabil, până la lenjerii de pat din mătase fină sau satin delicat, vei găsi opțiuni care se potrivesc stilului și preferințelor tale.</p>

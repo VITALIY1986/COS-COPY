@@ -45,7 +45,7 @@ const result = amount/interest;
 					</a>
 					
 				</Link>
-				<div className="text-center pl-2 md:pl-3 font-bold text-text_title">{product.name}</div>
+				<div className="mt-3 text-center pl-2 md:pl-3 font-semibold text-text_title text-lg uppercase">{product.name}</div>
 				<div className="product-info text-center pl-2 md:pl-3">
 					
 				

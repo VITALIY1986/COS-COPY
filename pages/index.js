@@ -2,14 +2,16 @@ import Layout from "../src/components/Layout";
 
 import client from '../src/components/ApolloClient';
 import ProductHome from "../src/components/ProductHomePage";
+
 import PRODUCTS_AND_CATEGORIES_QUERY from "../src/queries/product-and-categories";
 
 import Head from "next/head"
 import HeroCarousel from "../src/components/home/hero-carousel";
 
+import ProductList from '../src/components/ProductList';
+import PriceSlider from '../src/components/context/PriceSlider';
 
-
-
+import React, { useState, useEffect } from 'react'
 import ParentCategoryBlock from "../src/components/category/category-block/ParentCategoryBlock";
 
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -28,15 +30,35 @@ export default function Home (props) {
 
 	
 	
-	const { productCategories,heroCarousel,featuredproducts } = props || {};
+	const { productCategories,heroCarousel,featuredproducts  } = props || {};
 
 
 
 
      
 	
+	const [minPrice, setMinPrice] = useState(0);
+	const [maxPrice, setMaxPrice] = useState(1000);
+	const [products, setProducts] = useState([]);
 	
-	
+	// Загрузка продуктов из API или другого источника данных
+	useEffect(() => {
+	  // Здесь должна быть логика загрузки продуктов
+	  // Пример:
+	  const fetchData = async () => {
+		// Загрузка данных
+		const response = await fetch('your-api-endpoint');
+		const data = await response.json();
+		setProducts(data.products);
+	  };
+  
+	  fetchData();
+	}, []);
+  
+	const handlePriceChange = (newMinPrice, newMaxPrice) => {
+	  setMinPrice(newMinPrice);
+	  setMaxPrice(newMaxPrice);
+	};
 
 	return (
 	
@@ -122,11 +144,15 @@ export default function Home (props) {
 	{/*Hero 5*/}	
 	<div className="products container mx-auto my-10  ">
 	<h2 className="text-2xl ml-3 uppercase mt-20 text-center font-semibold">PRODUCE</h2>	
-		
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10">
-				{ featuredproducts.length ? (
-							featuredproducts.map( product => <ProductHome key={ product.id }  product={ product }/> )
-						) : '' }
+	
+	
+			<PriceSlider
+        initialMinPrice={0}
+        initialMaxPrice={1000}
+        onPriceChange={handlePriceChange}
+      />
+	  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10">
+      <ProductList products={featuredproducts} minPrice={minPrice} maxPrice={maxPrice} />
 							</div>
 					
 			

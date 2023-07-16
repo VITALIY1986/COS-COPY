@@ -123,7 +123,7 @@ export default function Home (props) {
 	<div className="products container mx-auto my-10  ">
 	<h2 className="text-2xl ml-3 uppercase mt-20 text-center font-semibold">PRODUCE</h2>	
 		
-			<div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10">
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10">
 				{ featuredproducts.length ? (
 							featuredproducts.map( product => <ProductHome key={ product.id }  product={ product }/> )
 						) : '' }

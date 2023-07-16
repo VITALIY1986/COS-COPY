@@ -9,7 +9,7 @@ const filteredProducts = products.filter((product) => {
 const price = parseFloat(product.price.replace("lei", "").replace(",", ""));
 return price >= minPrice && price <= maxPrice;
 });
-console.log(products)
+
 return (
 <>
 {filteredProducts.map((product) => (

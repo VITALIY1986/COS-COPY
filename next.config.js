@@ -3,16 +3,10 @@
 
 const path = require("path");
 const allowedImageWordPressDomain = new URL(process.env.NEXT_PUBLIC_WORDPRESS_URL).hostname
-const withOptimizedImages = require('next-optimized-images');
-module.exports =  withOptimizedImages( {
+
+module.exports =   {
  
-    optimizeImages: true,
-    mozjpeg: {
-        quality: 80,
-      },
-      webp: {
-        preset: 'default',
-      },
+   
     webpackDevMiddleware: (config) => {
         config.watchOptions = {
             poll: 1000,
@@ -33,4 +27,4 @@ module.exports =  withOptimizedImages( {
     images: {
         domains: [ allowedImageWordPressDomain, 'www.lux-tex.com.ro' ],
     },
-});
+};

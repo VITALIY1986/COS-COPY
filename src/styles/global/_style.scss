@@ -6,7 +6,7 @@
   color:#414141
 }
 .slider-button {
-
+width: 100%;
     justify-content: space-between;
     position: relative;
     display: flex;
@@ -304,12 +304,19 @@ h1 {
   font-size: 14px;
   line-height: 14px;
 }
+
 button {
   color: $very-dark-grayish-blue;
   font-size: 14px;
   line-height: 14px;
 }
-
+.slider-content{
+width: 100%;
+justify-content: center;
+align-items: center;
+display: flex;
+height: 100%;
+}
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
 /* Remove the focus indicator on mouse-focus for browsers that do support :focus-visible */
 button:focus:not(:focus-visible) {

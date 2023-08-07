@@ -1,14 +1,14 @@
 import {Facebook, Instagram, Twitter, Youtube} from "./icons";
 import Link from 'next/link';
 import Image from 'next/image'
-import profilePic from '../../public/logo.png'
+
 const Footer = () => (
 	<div className="footer bg-white shadow-2xl text-futer px-6 py-6 ">
 		<div className="flex flex-col items-center">
 		
 			<div className="w-24">
 	
-						<Image  src={profilePic} alt="Luxtex.ro - Lenjerie de pat de calitate, Premium și de lux în Iași " />
+					
 						</div>
 		
 			

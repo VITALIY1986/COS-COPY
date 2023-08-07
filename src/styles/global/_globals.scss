@@ -28,7 +28,12 @@ body{
  overflow:hidden;
  font-size: 10em;
  }
- 
+ table.iksweb  td {
+  border: 2px solid;
+ }
+ table.iksweb   {
+  margin-bottom: 2rem;
+ }
  .marquee span {
   text-transform: uppercase;
  color: #ffffff42;

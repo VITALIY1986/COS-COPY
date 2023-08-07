@@ -92,7 +92,7 @@ className="singl_product_description mb-5 mt-3 "
                         />
             <div class="border border-gray-200"></div>
                         <div className='mt-3'>
-                        <span className='text-gray-400   '>{product.sku}</span>
+                     <span>SKU:</span>   <span className='text-gray-400   '>{product.sku}</span>
                        
                 </div>
                     </div>

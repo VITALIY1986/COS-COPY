@@ -145,12 +145,12 @@ export default function Home (props) {
 	<div className="products container mx-auto my-10  ">
 	<h2 className="text-2xl ml-3 uppercase mt-20 text-center font-semibold">PRODUSE</h2>	
 	
-	
+	{/*
 			<PriceSlider
         initialMinPrice={0}
         initialMaxPrice={1000}
         onPriceChange={handlePriceChange}
-      />
+      />*/}
 	  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-10 px-3">
       <ProductList products={featuredproducts} minPrice={minPrice} maxPrice={maxPrice} />
 							</div>
